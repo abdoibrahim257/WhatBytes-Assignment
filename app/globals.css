@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-items{
+    @apply flex justify-start h-10 items-center gap-7;
+}
