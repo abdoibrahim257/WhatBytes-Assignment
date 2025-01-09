@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## about
-This is a [Next.js] assignment project for WhatByte interview process
+This is a [Next.js] assignment project for WhatBytes interview process
 
 
 ## Getting Started

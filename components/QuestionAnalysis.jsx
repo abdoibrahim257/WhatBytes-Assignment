@@ -44,7 +44,7 @@ const QuestionAnalysis = ({score}) => {
             <div  className='flex justify-center w-1/2'>
                 <Doughnut data={data} options={options} />
             </div>
-            <div className='relative -top-24'>
+            <div className='relative -top-28'>
               <img src="/arrow.svg" alt="bullseye" className='w-10' />
             </div>
         </div>
