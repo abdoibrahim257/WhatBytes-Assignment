@@ -13,7 +13,7 @@ const Navbar = () => {
     ];
 
   return (
-    <div className='w-1/6 min-w-32 h-screen p-2 lg:p-4 flex flex-col gap-7 border-r'>
+    <div className='w-1/6 min-w-max h-screen p-2 lg:p-4 flex flex-col gap-7 border-r'>
         {navItems.map((item, index) => (
             <a key={index} className={`nav-items ${selected === item.name ? 'bg-gray-200 rounded-xl text-blue-500' : ''}`} onClick={() => setSelected(item.name)}>
                 <Image src={item.icon} alt={item.name} width={30} height={30} />

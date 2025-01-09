@@ -11,7 +11,7 @@ import {
   Legend,
 } from "chart.js";
 
-
+// Register the required Chart.js components
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Tooltip, Legend);
 
 const ComparisonGraph = ({percentile}) => {
@@ -79,7 +79,7 @@ const ComparisonGraph = ({percentile}) => {
         responsive: true,
         plugins: {
         legend: {
-            display: true,
+            display: false,
             position: 'top',
         },
         },
@@ -98,7 +98,7 @@ const ComparisonGraph = ({percentile}) => {
             display: false,
             },
             title: {
-            display: true,
+            display: false,
             text: 'Density',
             },
         },
@@ -107,10 +107,10 @@ const ComparisonGraph = ({percentile}) => {
 
   return (
     <div className='p-3 border shadow-sm rounded'>
-        <p className='font-bold'>Comparison Graph</p>
+        <p className='font-bold text-sm md:text-base'>Comparison Graph</p>
         <div className='flex items-center gap-10 mt-2'>
-            <p className='text-slate-600'>You scored {percentile}% which is {lowerOrHigher()} than the average percentile {mean}% of all engineers who took this assginment</p>
-            <Image  src  = "/stat.svg" alt="stats" width={40} height={30} />
+            <p className='text-slate-600 text-xs md:text-sm'>You scored {percentile}% which is {lowerOrHigher()} than the average percentile {mean}% of all engineers who took this assginment</p>
+            <img  src  = "/stat.svg" alt="stats" className='w-6 md:w-10' />
         </div>
         <div className='mt-5 flex justify-center'>
             <Line data={data} options={options} />

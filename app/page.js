@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="flex gap-10">
+      <div className="flex gap-4 lg:gap-10">
         <Navbar />
         <Skills />
       </div>

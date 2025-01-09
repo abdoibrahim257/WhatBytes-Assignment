@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .nav-items{
-    @apply flex justify-start h-10 items-center gap-3 lg:gap-7 cursor-pointer;
+    @apply flex justify-start h-10 items-center gap-1 md:gap-3 lg:gap-7 cursor-pointer;
 }
 
 .form-group{
-    @apply flex justify-between items-center gap-1 mb-3;
+    @apply flex justify-between items-center gap-1;
 }
 
 input[type='number']::-webkit-outer-spin-button,

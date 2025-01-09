@@ -39,9 +39,9 @@ const QuestionAnalysis = ({score}) => {
             <p className='font-bold'>Question Analysis</p>
             <p className='text-blue-700 font-bold'>{score}/15</p>
         </div>
-        <div  className='flex flex-col gap-2  items-center'>
-            {score === "15" ? <p>You scored {score} out of 15. Great Job</p> : <p>you scored {score} out of 15. However, it still needs some improvements.</p>}
-            <div  className='w-1/2 flex justify-center'>
+        <div  className='flex flex-col gap-2 items-center'>
+            {score === "15" ? <p className='w-full text-left'>You scored {score} out of 15. Great Job</p> : <p className='w-full text-left'>you scored {score} out of 15. However, it still needs some improvements.</p>}
+            <div  className='flex justify-center w-1/4'>
                 <Doughnut data={data} options={options} />
             </div>
         </div>
