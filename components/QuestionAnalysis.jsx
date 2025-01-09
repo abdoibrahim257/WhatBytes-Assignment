@@ -11,8 +11,8 @@ const QuestionAnalysis = ({score}) => {
         labels: ["Incorrect", "Correct"],
         datasets: [
           {
-            data: [15-score,score], // Adjust these numbers for your use case
-            backgroundColor: ["#E5E7EB", "#3B82F6"], // Blue for correct, gray for incorrect
+            data: [15-score,score], 
+            backgroundColor: ["#E5E7EB", "#3B82F6"], 
             hoverBackgroundColor: ["#E5E7EB", "#3B82F6"],
             borderWidth: 0,
           },
@@ -20,13 +20,13 @@ const QuestionAnalysis = ({score}) => {
     };
 
     const options = {
-        cutout: "75%", // Makes the inner hole
+        cutout: "75%", 
         plugins: {
           tooltip: {
-            enabled: false, // Disable tooltips
+            enabled: false, 
           },
           legend: {
-            display: false, // Hide legend
+            display: false, 
           },
         },
       };

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const QuickStats = ({rank, percentile, score}) => {
   return (
-    <div className='p-3 border shadow-sm rounded flex flex-col gap-3 '>
+    <div className='p-3 border shadow-sm rounded flex flex-col gap-4 '>
         <h2 className='font-bold'>Quick Statistics</h2>
         <div className='flex justify-evenly items-center mb-4'>
             <div className='flex items-center gap-3'>
@@ -13,7 +13,7 @@ const QuickStats = ({rank, percentile, score}) => {
                 </div>
                 <div className='felx flex-col'>
                     <p className='font-bold'>{rank}</p>
-                    <p className='text-slate-400'>Your Rank</p>
+                    <p className='text-slate-400'>YOUR RANK</p>
                 </div>
             </div>
             <div className='flex items-center gap-3'>
@@ -22,7 +22,7 @@ const QuickStats = ({rank, percentile, score}) => {
                 </div>
                 <div className='felx flex-col'>
                     <p className='font-bold'>{percentile}%</p>
-                    <p className='text-slate-400'>Percentile</p>
+                    <p className='text-slate-400'>PERCENTILE</p>
                 </div>
             </div>
             <div className='flex items-center gap-3'>
@@ -31,7 +31,7 @@ const QuickStats = ({rank, percentile, score}) => {
                 </div>
                 <div className='felx flex-col'>
                     <p className='font-bold'>{score}/15</p>
-                    <p className='text-slate-400'>Your Score</p>
+                    <p className='text-slate-400'>YOUR SCORE</p>
                 </div>
             </div>
         </div>

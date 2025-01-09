@@ -1,7 +1,7 @@
 import React from 'react'
 
 const SyllabusAnalysis = () => {
-
+    
     //dummy data
     const syllabus = [
         {
@@ -29,7 +29,7 @@ const SyllabusAnalysis = () => {
   return (
     <div className='p-3 border shadow-sm rounded'>
         <p className='font-bold mb-8'>Syllabus Wise Analysis</p>
-        <div   className='flex flex-col gap-8'>
+        <div   className='flex flex-col gap-8 mb-4'>
             {syllabus.map((item, index) => (
                 <div key={index} className='flex flex-col gap-2'>
                     <div>{item.topic}</div>
