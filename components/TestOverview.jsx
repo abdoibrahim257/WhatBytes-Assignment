@@ -76,10 +76,12 @@ const TestOverview = ({setRank, setPercentile, setScore}) => {
   return (
     <div>
         <div className='h-28 flex items-center justify-between p-3 border shadow-sm rounded'>
-            <Image src="/HTML5.png" alt="HTML5" width={55} height={55} />
-            <div>
-                <p className='font-bold'>Hyper Text Markup Language</p>
-                <p className='text-gray-700'>Questions: {noOfQuestions} | Duration: {Duration} | Submitted on {dateSubmitted}</p>
+            <div className='flex items-center gap-5'>
+                <Image src="/HTML5.png" alt="HTML5" width={55} height={55} />
+                <div>
+                    <p className='font-bold'>Hyper Text Markup Language</p>
+                    <p className='text-gray-700'>Questions: {noOfQuestions} | Duration: {Duration} | Submitted on {dateSubmitted}</p>
+                </div>
             </div>
             <button className='rounded-lg shadow-md bg-blue-800 text-white p-1 w-1/6 h-10 border-0 hover:bg-blue-900' onClick={handleClick}>Update</button>
         </div>
