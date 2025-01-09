@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .nav-items{
-    @apply flex justify-start h-10 items-center gap-7 cursor-pointer;
+    @apply flex justify-start h-10 items-center gap-3 lg:gap-7 cursor-pointer;
 }
 
 .form-group{
