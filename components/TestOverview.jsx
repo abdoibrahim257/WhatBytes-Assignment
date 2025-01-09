@@ -2,7 +2,7 @@
 import React, {useRef, useState} from 'react'
 import Image from 'next/image'
 
-const TestOverview = () => {
+const TestOverview = ({setRank, setPercentile, setScore}) => {
     const [formVisible, setFormVisible] = useState(false);
     const [percentileError, setPercentileError] = useState(false);
     const [rankeError, setRankError] = useState(false);
@@ -64,6 +64,9 @@ const TestOverview = () => {
             console.log('Rank:', rank);
             console.log('Percentile:', percentile);
             console.log('Score:', score);
+            setRank(rank);
+            setPercentile(percentile);
+            setScore(score);
             setFormVisible(false);
         }
     }
@@ -72,7 +75,7 @@ const TestOverview = () => {
 
   return (
     <div>
-        <div className='w-3/5 h-28 flex items-center justify-center gap-7 p-3 border shadow-sm'>
+        <div className='w-3/5 h-28 flex items-center justify-center gap-7 p-3 border shadow-sm rounded'>
             <Image src="/HTML5.png" alt="HTML5" width={55} height={55} />
             <div>
                 <p className='font-bold'>Hyper Text Markup Language</p>
