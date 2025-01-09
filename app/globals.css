@@ -3,5 +3,19 @@
 @tailwind utilities;
 
 .nav-items{
-    @apply flex justify-start h-10 items-center gap-7;
+    @apply flex justify-start h-10 items-center gap-7 cursor-pointer;
+}
+
+.form-group{
+    @apply flex justify-between items-center gap-1 mb-3;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }

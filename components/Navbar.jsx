@@ -20,18 +20,6 @@ const Navbar = () => {
                 <p className='font-medium'>{item.name}</p>
             </a>
         ))}
-        {/* <a className='nav-items' href='#'>
-            <Image src="/dashboard.svg" alt="Dashboard" width={30} height={30} />
-            <p className='font-medium'>Dashboard</p>    
-        </a>
-        <a className='nav-items' href='#'>
-            <Image src="/skill.svg" alt="Skill Test" width={30} height={30} />
-            <p className='font-medium'>Skill Test</p>
-        </a>
-        <a className='nav-items' href='#'>
-            <Image src="/internship.svg" alt="Internship" width={30} height={30} />
-            <p className='font-medium'>Internship</p>
-        </a> */}
     </div>
   )
 }
