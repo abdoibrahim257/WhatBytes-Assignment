@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const QuickStats = ({rank, percentile, score}) => {
   return (
-    <div className='w-3/5 p-3 border shadow-sm rounded flex flex-col gap-3 '>
+    <div className='p-3 border shadow-sm rounded flex flex-col gap-3 '>
         <h2 className='font-bold'>Quick Statistics</h2>
         <div className='flex justify-evenly items-center mb-4'>
             <div className='flex items-center gap-3'>

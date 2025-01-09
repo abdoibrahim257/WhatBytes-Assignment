@@ -75,7 +75,7 @@ const TestOverview = ({setRank, setPercentile, setScore}) => {
 
   return (
     <div>
-        <div className='w-3/5 h-28 flex items-center justify-center gap-7 p-3 border shadow-sm rounded'>
+        <div className='h-28 flex items-center justify-between p-3 border shadow-sm rounded'>
             <Image src="/HTML5.png" alt="HTML5" width={55} height={55} />
             <div>
                 <p className='font-bold'>Hyper Text Markup Language</p>
